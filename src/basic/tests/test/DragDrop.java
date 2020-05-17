@@ -1,6 +1,6 @@
-package basic.tests;
+package basic.tests.test;
 
-import base.Base;
+import basic.tests.base.Base;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;

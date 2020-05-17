@@ -1,9 +1,8 @@
-package base;
+package basic.tests.base;
 
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.sql.Driver;
 import java.util.concurrent.TimeUnit;
 
 import io.appium.java_client.android.AndroidElement;

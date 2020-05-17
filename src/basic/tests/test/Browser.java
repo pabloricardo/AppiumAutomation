@@ -1,6 +1,6 @@
-package basic.tests;
+package basic.tests.test;
 
-import base.BaseChrome;
+import basic.tests.base.BaseChrome;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
