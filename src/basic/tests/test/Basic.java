@@ -1,15 +1,15 @@
+package basic.tests;
+
+import base.Base;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import org.openqa.selenium.JavascriptException;
-import org.openqa.selenium.JavascriptExecutor;
 
 import java.net.MalformedURLException;
 
-public class Browser extends BaseChrome {
+public class Basic extends Base {
     public static void main(String[] args) throws MalformedURLException {
         AndroidDriver<AndroidElement> driver = Capabilities();
-        driver.get("http://google.com");
-        //JavascriptExecutor jse = (JavascriptExecutor) driver;
 
+        driver.findElementByXPath("//android.widget.TextView[@text='Preference']").click();
     }
 }
