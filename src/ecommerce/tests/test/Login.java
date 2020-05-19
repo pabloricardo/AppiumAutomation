@@ -1,6 +1,5 @@
 package ecommerce.tests.test;
 
-
 import ecommerce.tests.base.Base;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
@@ -9,7 +8,7 @@ import org.openqa.selenium.By;
 
 import java.net.MalformedURLException;
 
-public class Test01 extends Base {
+public class Login extends Base {
 
     public static void main(String[] args) throws MalformedURLException {
         AppiumDriver<AndroidElement> driver = capabilities();
@@ -20,12 +19,5 @@ public class Test01 extends Base {
         driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(text(\"Brazil\"));"));
         driver.findElement(By.xpath("//*[@text='Brazil']")).click();
         driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
-
-        //driver.findELementByAndroidUIAutomator();
-
-
-
     }
-
-
 }
