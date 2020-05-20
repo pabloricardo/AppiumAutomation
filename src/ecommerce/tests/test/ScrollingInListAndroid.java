@@ -5,11 +5,13 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 
 import java.net.MalformedURLException;
 import java.util.List;
 
 public class ScrollingInListAndroid extends Base {
+
     public static void main(String[] args) throws MalformedURLException {
         AppiumDriver<AndroidElement> driver = capabilities();
         driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Test01");
@@ -33,6 +35,8 @@ public class ScrollingInListAndroid extends Base {
         }
 
         driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
+        String descProductAdded = driver.findElement(By.id("com.androidsample.generalstore:id/productName")).getText();
+        Assert.assertEquals("Jordan 6 Rings", descProductAdded);
 
     }
 }
